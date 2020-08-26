@@ -3,6 +3,38 @@
     <repository>
       <include>true</include>
       <metadata>
+        <id>local</id>
+        <url>C:\Users\phili/.m2/repository</url>
+        <source>LOCAL</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>redhat-ga-repository</id>
+        <url>http://192.168.50.6:8081/repository/redhat-ga/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>nexus-lab-repository</id>
+        <url>http://192.168.50.6:8081/repository/maven-central/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
+        <id>nexus-lab-plugin-repository</id>
+        <url>http://192.168.50.6:8081/repository/maven-central/</url>
+        <source>SETTINGS</source>
+      </metadata>
+    </repository>
+    <repository>
+      <include>true</include>
+      <metadata>
         <id>central</id>
         <url>https://repo.maven.apache.org/maven2</url>
         <source>PROJECT</source>
