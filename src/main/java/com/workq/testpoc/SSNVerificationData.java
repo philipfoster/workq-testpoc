@@ -6,12 +6,91 @@ package com.workq.testpoc;
 
 public class SSNVerificationData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public SSNVerificationData() {
-    }
+	@org.kie.api.definition.type.Label("ID")
+	private java.lang.Long id;
+	@org.kie.api.definition.type.Label("Case ID")
+	private java.lang.String caseId;
+	@org.kie.api.definition.type.Label("Approved")
+	private java.lang.Boolean approved;
+	@org.kie.api.definition.type.Label("Automated")
+	private boolean automated;
+	@org.kie.api.definition.type.Label("Social Security Number")
+	private java.lang.String ssn;
 
+	@org.kie.api.definition.type.Label(value = "SSN Image Document Storage ID")
+	private java.lang.String ssnImageId;
 
+	public SSNVerificationData() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.String getCaseId() {
+		return this.caseId;
+	}
+
+	public void setCaseId(java.lang.String caseId) {
+		this.caseId = caseId;
+	}
+
+	public java.lang.String getSsn() {
+		return this.ssn;
+	}
+
+	public void setSsn(java.lang.String ssn) {
+		this.ssn = ssn;
+	}
+
+	public java.lang.Boolean getApproved() {
+		return this.approved;
+	}
+
+	public void setApproved(java.lang.Boolean approved) {
+		this.approved = approved;
+	}
+
+	public SSNVerificationData(java.lang.Long id, java.lang.String caseId,
+			boolean approved, java.lang.Boolean automated, java.lang.String ssn) {
+		this.id = id;
+		this.caseId = caseId;
+		this.approved = approved;
+		this.automated = automated;
+		this.ssn = ssn;
+	}
+
+	public boolean isAutomated() {
+		return this.automated;
+	}
+
+	public void setAutomated(boolean automated) {
+		this.automated = automated;
+	}
+
+	public java.lang.String getSsnImageId() {
+		return this.ssnImageId;
+	}
+
+	public void setSsnImageId(java.lang.String ssnImageId) {
+		this.ssnImageId = ssnImageId;
+	}
+
+	public SSNVerificationData(java.lang.Long id, java.lang.String caseId,
+			java.lang.Boolean approved, boolean automated,
+			java.lang.String ssn, java.lang.String ssnImageId) {
+		this.id = id;
+		this.caseId = caseId;
+		this.approved = approved;
+		this.automated = automated;
+		this.ssn = ssn;
+		this.ssnImageId = ssnImageId;
+	}
 
 }
