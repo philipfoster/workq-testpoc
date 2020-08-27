@@ -93,17 +93,5 @@ public class SSNVerificationData implements java.io.Serializable {
 		this.ssnImageId = ssnImageId;
 	}
 
-    @Override
-    public String toString() {
-        return "SSNVerificationData{" +
-            "id=" + id +
-            ", caseId='" + caseId + '\'' +
-            ", approved=" + approved +
-            ", automated=" + automated +
-            ", ssn='" + ssn + '\'' +
-            ", ssnImageId='" + ssnImageId + '\'' +
-            '}';
-    }
-
 
 }
